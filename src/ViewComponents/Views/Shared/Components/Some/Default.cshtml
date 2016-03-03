@@ -1,0 +1,9 @@
+﻿@model List<ViewComponents.Models.SomeStuff>
+
+<h2>Some-Default</h2>
+<ul>
+    @foreach (var stuff in Model)
+    {
+        <li>@stuff.Id</li>
+    }
+</ul>
