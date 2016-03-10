@@ -13,9 +13,6 @@ namespace ViewComponents.ViewComponents
     {
 	    private SomeRepository SomeRepository { get; set; }
 
-		[ViewContext]
-		private ViewContext VwContext { get; set; }
-
 	    public SomeViewComponent(SomeRepository someRepository)
 	    {
 		    if(someRepository == null) throw new ArgumentNullException(nameof(someRepository));
